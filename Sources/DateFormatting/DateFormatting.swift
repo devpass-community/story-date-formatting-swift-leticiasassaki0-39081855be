@@ -12,14 +12,12 @@ public struct DateFormatting {
     }
 
     func formatDate(date: Date) -> String {
-
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy"
         return dateFormatter.string(from: date)
     }
 
     func dateFromString(dateString: String) -> Date? {
-
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy"
         return dateFormatter.date(from: dateString)
